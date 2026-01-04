@@ -1,6 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import { ENV } from './configs/env'
+import usersRoutes from './routes/usersRoutes';
+import productsRoutes from './routes/productsRoutes';
+import commentsRoutes from './routes/commentsRoutes';
 
 //import { clerkMiddleware } from '@clerk/express'
 
