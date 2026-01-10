@@ -15,6 +15,7 @@ export async function syncUser(req: Request, res: Response) {
         if (!userId) {
             return res.status(401).json({ error: "Unauthorized" });
         }
+        
         const { email, name, imageUrl } = req.body as SyncUserRequest;
 
         if (!email || !name || !imageUrl) {

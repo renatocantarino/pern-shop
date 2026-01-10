@@ -23,8 +23,16 @@ export const getMyProducts = async () => {
 };
 
 export const createProduct = async (productData) => {
-    const { data } = await httpHandler.post("/products", productData);
-    return data;
+    try {
+        const { data } = await httpHandler.post("/products", productData);
+        return data;
+    } catch (err) {
+        // Rethrow a richer error object so UI can display status and raw response when server returns empty or unexpected payloads
+        const status = err?.response?.status ?? null;
+        const data = err?.response?.data ?? null;
+        const message = err?.message ?? "Request failed";
+        throw { status, data, message };
+    }
 };
 
 export const updateProduct = async ({ id, ...productData }) => {
