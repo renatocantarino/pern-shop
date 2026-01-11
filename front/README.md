@@ -1,6 +1,6 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend do 'PERN Shop': app React (Vite) para um e‑commerce de exemplo (Node/Express + PostgreSQL). Oferece listagem e detalhes de produtos, criação/edição, comentários e autenticação.
 
 Currently, two official plugins are available:
 

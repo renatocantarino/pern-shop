@@ -1,5 +1,7 @@
 # pern-shop (resumo rápido)
 
+Projeto 'PERN Shop': app de e‑commerce exemplo (Node/Express + PostgreSQL + React/Vite). Oferece listagem e detalhes de produtos, criação/edição, comentários e autenticação.
+
 **Stack:** Postgres, Express, React, Node (PERN)
 
 ## 🧩 Tecnologias principais
